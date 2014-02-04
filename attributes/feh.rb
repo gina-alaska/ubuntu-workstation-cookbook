@@ -1,0 +1,1 @@
+default['feh'] = nil

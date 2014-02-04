@@ -20,5 +20,6 @@ suites:
   - recipe[ubuntu-workstation::tmux]
   - recipe[ubuntu-workstation::user_profile]
   - recipe[ubuntu-workstation::vim]
+  - recipe[ubuntu-workstation::feh]
   attributes:
     workstation_user: vagrant
