@@ -1,0 +1,1 @@
+default['gina-sub']['repo'] = "git@github.com:gina-alaska/gina-sub.git"

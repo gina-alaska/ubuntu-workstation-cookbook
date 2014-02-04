@@ -2,14 +2,23 @@
 driver_plugin: vagrant
 driver_config:
   require_chef_omnibus: true
-
 platforms:
-- name: ubuntu-13.04
+- name: ubuntu-13.10
   driver_config:
-    box: opscode-ubuntu-13.04
-    box_url: https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_ubuntu-13.04_provisionerless.box
-
+    box: opscode_ubuntu-13.10_provisionerless
+    box_url: https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_ubuntu-13.10_provisionerless.box
 suites:
 - name: default
-  run_list: ["recipe[ubuntu-workstation]"]
-  attributes: {}
+  run_list:
+  - recipe[ubuntu-workstation::default]
+  - recipe[ubuntu-workstation::default_editor]
+  - recipe[ubuntu-workstation::gina-sub]
+  - recipe[ubuntu-workstation::git]
+  - recipe[ubuntu-workstation::moreutils]
+  - recipe[ubuntu-workstation::nvidia]
+  - recipe[ubuntu-workstation::sublime_text]
+  - recipe[ubuntu-workstation::tmux]
+  - recipe[ubuntu-workstation::user_profile]
+  - recipe[ubuntu-workstation::vim]
+  attributes:
+    workstation_user: vagrant

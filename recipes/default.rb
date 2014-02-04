@@ -7,4 +7,6 @@
 # All rights reserved - Do Not Redistribute
 #
 
-#This recipe does nothing
+#This recipe should only include the apt recipe, which forces an apt-get update if necessary
+
+include_recipe "apt"

@@ -1,4 +1,4 @@
-file "/etc/profile.d/user_profile.sh" do
+cookbook_file "/etc/profile.d/user_profile.sh" do
 	mode "0755"
 	source "user_profile.sh"
 end

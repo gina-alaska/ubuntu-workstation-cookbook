@@ -1,1 +1,1 @@
-default['default_editor'] = "/usr/bin/vim"
+default['default_editor'] = "/usr/bin/nano"
