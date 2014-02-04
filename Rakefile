@@ -98,7 +98,6 @@ namespace :uw do |variable|
 
 			system("kitchen test #{recipe_name}")
 		ensure
-			puts default_kitchen.inspect
 			save_kitchen(default_kitchen)
 			FileUtils.rm_rf("test/integration/#{recipe_name}")
 		end
