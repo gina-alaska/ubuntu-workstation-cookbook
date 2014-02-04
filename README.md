@@ -22,6 +22,7 @@ Create a new test, recipe, attributes file and add the recipe to the .kitchen.ym
 rake uw:create[recipe_name]
 ```
 
+
 ###Writing tests:
 The directory 'test/integration/default/serverspec' has examples on how to test that packages are installed, files have correct owners and permissions. 
 
@@ -54,6 +55,12 @@ This will converge all recipes and run all tests.  This is useful to find any co
 
 ## Finishing
 When all tests are passing, push it back to github and issue a pull request
+
+## More Details
+
+[The ubuntu-workstation-cookbook wiki](https://github.com/gina-alaska/ubuntu-workstation-cookbook/wiki/Adding-a-recipe) has a short example on creating a recipe to install the package 'feh'
+
+
 
 # Additional Reading
 - [Learn Chef](http://learnchef.opscode.com)
