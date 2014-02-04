@@ -41,8 +41,7 @@ def create_spec(recipe_name)
 		"[exists]  ".yellow 
 	else
 		File.open("test/integration/default/serverspec/#{recipe_name}_spec.rb", "w") do |file|
-			file << "
-require 'serverspec'
+			file << "require 'serverspec'
 
 include Serverspec::Helper::Exec
 include Serverspec::Helper::DetectOS
