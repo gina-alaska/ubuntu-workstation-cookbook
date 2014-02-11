@@ -1,0 +1,1 @@
+default['gnome_desktop']['set_default'] = false
