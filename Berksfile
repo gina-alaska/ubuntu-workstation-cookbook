@@ -4,5 +4,6 @@ group :integration do
 end
 
 cookbook 'apt'
+cookbook 'user'
 
 metadata

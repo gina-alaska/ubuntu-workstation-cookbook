@@ -15,12 +15,28 @@ suites:
   - recipe[ubuntu-workstation::gina-sub]
   - recipe[ubuntu-workstation::git]
   - recipe[ubuntu-workstation::moreutils]
-  - recipe[ubuntu-workstation::nvidia]
-  - recipe[ubuntu-workstation::sublime_text]
+  #- recipe[ubuntu-workstation::nvidia]
+  #- recipe[ubuntu-workstation::sublime_text]
   - recipe[ubuntu-workstation::tmux]
   - recipe[ubuntu-workstation::user_profile]
   - recipe[ubuntu-workstation::vim]
   - recipe[ubuntu-workstation::feh]
-  - recipe[ubuntu-workstation::gnome-desktop]
+  #- recipe[ubuntu-workstation::gnome-desktop]
+  - recipe[ubuntu-workstation::samba]
   attributes:
     workstation_user: vagrant
+    users:
+    - test
+    samba:
+      users:
+      - name: test
+        plaintextpassword: testsambapassword
+      shares:
+        root:
+          comment: Workstation root Directory
+          path: /
+          "guest ok": false
+          printable: false
+          "write list":
+          - test
+          "read only": false

@@ -12,7 +12,8 @@ Each recipe corresponds to a specific piece of software(ex: 'vim') that contains
 Clone this repository and install required gems
 
 ```
-git clone https://github.com/gina-alaska/ubuntu-workstation
+git clone https://github.com/gina-alaska/ubuntu-workstation-cookbook
+cd ubuntu-workstation-cookbook
 bundle install
 ```
 
