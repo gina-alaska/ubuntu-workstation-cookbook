@@ -3,10 +3,7 @@ driver_plugin: vagrant
 driver_config:
   require_chef_omnibus: true
 platforms:
-- name: ubuntu-13.10
-  driver_config:
-    box: opscode_ubuntu-13.10_provisionerless
-    box_url: https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_ubuntu-13.10_provisionerless.box
+- name: ubuntu-14.04
 suites:
 - name: default
   run_list:
