@@ -1,0 +1,1 @@
+default['cinnamon-desktop'] = nil
