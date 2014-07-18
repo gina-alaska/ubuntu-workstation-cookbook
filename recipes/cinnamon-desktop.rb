@@ -1,12 +1,12 @@
 #  Recipe for installing/configuring cinnamon-desktop
 package('lightdm')
 
-apt_repository 'cinnamon' do
-  uri          'http://ppa.launchpad.net/lestcape/cinnamon'
-  distribution node['lsb']['codename']
-  components   ['main']
-  keyserver    'keyserver.ubuntu.com'
-  key          'FA2AF90A'
+apt_repository 'mint-cinnamon' do
+  uri  'http://packages.linuxmint.com/'
+  distribution 'qiana'
+  components ['main','upstream', 'import']
+  trusted true
 end
 
+package('linuxmint-keyring')
 package('cinnamon')
