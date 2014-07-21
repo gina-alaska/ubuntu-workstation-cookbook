@@ -18,6 +18,7 @@ suites:
   - recipe[ubuntu-workstation::feh]
   - recipe[ubuntu-workstation::samba]
   - recipe[ubuntu-workstation::cinnamon-desktop]
+  - recipe[ubuntu-workstation::chrome_web_browser]
   attributes:
     workstation_user: vagrant
     users:
